@@ -1,3 +1,14 @@
+*.uvguix.*
+JLinkLog.txt
+JLinkSettings.ini
+EventRecorderStub.scvd
+
+out/*.crf
+out/*.dep
+out/*.htm
+out/*.lnp
+out/*.axf
+
 # Prerequisites
 *.d
 
