@@ -16,7 +16,7 @@
         <TargetCommonOption>
           <Device>SWM221xB</Device>
           <Vendor>Synwit</Vendor>
-          <PackID>Synwit.SWM32_DFP.2.2.0</PackID>
+          <PackID>Synwit.SWM32_DFP.2.2.1</PackID>
           <PackURL>http://www.synwit.com/pack</PackURL>
           <Cpu>IRAM(0x20000000,0x2000) IROM(0x00000000,0x20000) CPUTYPE("Cortex-M0") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -412,6 +412,11 @@
               <FileName>SWM221_qspi.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\CSL\SWM221_StdPeriph_Driver\SWM221_qspi.c</FilePath>
+            </File>
+            <File>
+              <FileName>SWM221_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\CSL\SWM221_StdPeriph_Driver\SWM221_flash.c</FilePath>
             </File>
           </Files>
         </Group>

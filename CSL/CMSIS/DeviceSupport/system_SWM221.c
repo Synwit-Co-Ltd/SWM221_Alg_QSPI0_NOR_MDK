@@ -122,7 +122,7 @@ void SystemInit(void)
 {
 	SYS->CLKEN0 |= (1 << SYS_CLKEN0_ANAC_Pos);
 	
-//	Flash_Param_at_xMHz(72);
+	Flash_Param_at_xMHz(72);
 	
 	switchToHRC();
 	
@@ -147,11 +147,11 @@ void SystemInit(void)
 	
 	switchToDIV(SYS_CLK, SYS_CLK_DIV);
 	
-//	Flash_Param_at_xMHz(CyclesPerUs);
+	Flash_Param_at_xMHz(CyclesPerUs);
 	
-//	Cache_Clear();						// Cache Clear
-//	
-//	FMC->CACHE |= FMC_CACHE_CEN_Msk;	// Cache Enable
+	Cache_Clear();						// Cache Clear
+	
+	FMC->CACHE |= FMC_CACHE_CEN_Msk;	// Cache Enable
 	
 	PORTB->PULLD &= ~((1 << PIN10) | (1 << PIN11));
 	PORTB->PULLU &= ~((1 << PIN12) | (1 << PIN15));

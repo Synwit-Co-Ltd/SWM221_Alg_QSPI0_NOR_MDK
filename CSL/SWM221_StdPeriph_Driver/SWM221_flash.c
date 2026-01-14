@@ -125,17 +125,13 @@ uint16_t Code_Cache_Clear[] = {
 };
 
 #if   defined ( __CC_ARM )
-__asm void Cache_Clear(void)	// AC5
+void Cache_Clear(void)	// AC5
 {
-	IMPORT Code_Cache_Clear
-	PUSH {LR}
-	NOP
-	LDR R0,=Code_Cache_Clear
-    ADDS R0, R0, #1
-	NOP
-	BLX R0
-	POP {R0}
-	BX R0
+	__NOP(); __NOP(); __NOP(); __NOP();
+	
+	FMC->CACHE |= FMC_CACHE_CCLR_Msk;	// Cache Clear
+	
+	__NOP(); __NOP(); __NOP(); __NOP();
 }
 #else
 void Cache_Clear(void)			// AC6
