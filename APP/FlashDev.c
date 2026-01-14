@@ -1,6 +1,12 @@
 #include "FlashOS.h"
 
 
+/*	FlashOS.h 中 SECTOR_NUM 配置说明：
+ *	为 Keil 生成 FLM 文件时，SECTOR_NUM 必须为 512，否则 Keil 不识别生成的 FLM 文件。
+ *	为 J-Flash 生成 FLM 文件时，SECTOR_NUM 取值必须减小以使得 Code + RO Data + RW Data + ZI Data 所需 RAM 小于 8KB，否则 J-Flash 下载失败。
+ */
+
+
 struct FlashDevice const FlashDevice  =  {
 	FLASH_DRV_VERS,             // Driver Version, do not modify!
 #ifndef ADDR_4BYTE
