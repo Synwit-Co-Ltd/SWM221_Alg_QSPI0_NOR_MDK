@@ -31,8 +31,8 @@
     Program header entries: 2
     Section header entries: 17
 
-    Program header offset: 134436 (0x00020d24)
-    Section header offset: 134500 (0x00020d64)
+    Program header offset: 130468 (0x0001fda4)
+    Section header offset: 130532 (0x0001fde4)
 
     Section header string table index: 16
 
@@ -46,7 +46,7 @@
 ====================================
 
 ** Program header #1 (PT_LOAD) [PF_R + PF_ARM_PI]
-    Size : 4256 bytes
+    Size : 288 bytes
     Virtual address: 0x00000e30 (Alignment 4)
 
 
@@ -1851,7 +1851,7 @@
 
 
 ** Section #4 'DevDscr' (SHT_PROGBITS) [SHF_ALLOC]
-    Size   : 4256 bytes (alignment 4)
+    Size   : 288 bytes (alignment 4)
     Address: 0x00000e30
 
 

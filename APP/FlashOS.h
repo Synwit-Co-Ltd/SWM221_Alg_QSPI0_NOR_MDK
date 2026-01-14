@@ -31,7 +31,7 @@
 #define EXT32BIT   4           // External Flash Device on 32-bit Bus
 #define EXTSPI     5           // External Flash Device on SPI
 
-#define SECTOR_NUM 512         // Max Number of Sector Items
+#define SECTOR_NUM 16          // Max Number of Sector Items
 #define PAGE_MAX   65536       // Max Page Size for Programming
 
 struct FlashSectors  {
